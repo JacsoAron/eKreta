@@ -20,5 +20,37 @@ namespace eKreta
         {
             InitializeComponent();
         }
+
+        private void diakMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            feladatPanel.Children.Clear();
+            feladatPanel.Children.Add(new UserControls.UserControlDiakok());
+        }
+
+        private void tanarMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void osztalyMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void termekMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void felhasznalokMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            feladatPanel.Children.Clear();
+            feladatPanel.Children.Add(new UserControls.UserControlFelhasznalok());
+        }
+
+        private void kilepesMenu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
     }
 }
